@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+  package="me.lachlanvelden.flutter.msal.fluttermsal">
+  <application>
+    <activity android:name="me.lachlanvelden.flutter.msal.fluttermsal.FlutterMsalActivity">
+    </activity>
+    <activity android:name="com.microsoft.identity.client.BrowserTabActivity" 
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data android:scheme="msale1d63f16-b34b-4bb4-a251-e3b69b5de374" 
+          android:host="auth" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
